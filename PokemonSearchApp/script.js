@@ -3,24 +3,24 @@ var content = 'invisible'
 var matchingType
 const type_url = 'https://pokemon.fandom.com/wiki/'
 const colorTypes = [
-    { type: 'normal', color: '#A8A77A', background: 'https://www.dropbox.com/scl/fi/usi3z9o855acjgnxt73lg/normal.png?rlkey=jfatkkfh9v3e2l49c4qkjwfzs&raw=1' },
-    { type: 'fire', color: '#EE8130', background: 'https://www.dropbox.com/scl/fi/js9wuvanspd8e78qv0vgi/fire.png?rlkey=b5tyykravvxyjqy59w519gkbz&raw=1' },
-    { type: 'water', color: '#6390F0', background: 'https://www.dropbox.com/scl/fi/0b5xa1337xb7ue5wnj6kw/water.png?rlkey=dc6i05qr9adv4ti71pjna6n3h&raw=1' },
-    { type: 'electric', color: '#F7D02C', background: 'https://www.dropbox.com/scl/fi/y0o0imimvophg8qy8e6lk/electric.png?rlkey=n524vtnzm0uojwxftved2uv44&raw=1' },
-    { type: 'grass', color: '#7AC74C', background: 'https://www.dropbox.com/scl/fi/35yp5kqzhvp3ssp8olcnd/grass-bug.png?rlkey=7g1bcxwcyu5gwt7ktu5n1cz5b&raw=1' },
-    { type: 'ice', color: '#96D9D6', background: 'https://www.dropbox.com/scl/fi/9n9hbc68z7tky5r18i4jd/ice.png?rlkey=46uqy2ks9x6odk8rkxeeravb2&raw=1' },
-    { type: 'fighting', color: '#C22E28', background: 'https://www.dropbox.com/scl/fi/b11tl8kzbcozavi7elgps/fighting.png?rlkey=jrspvotuky5qzmk6n27po26py&raw=1' },
-    { type: 'poison', color: '#A33EA1', background: 'https://www.dropbox.com/scl/fi/5yok3gtlh8yiqw7nn5bvx/poison.png?rlkey=emqq93zttfjqhwtngmvafnwx3&raw=1' },
-    { type: 'ground', color: '#E2BF65', background: 'https://www.dropbox.com/scl/fi/j93h6i3v9t4901lzrkcem/ground.png?rlkey=eljz7w3mdm54swi3kyzsbaenn&raw=1' },
-    { type: 'flying', color: '#A98FF3', background: 'https://www.dropbox.com/scl/fi/wt9d945qdfak1980qbrbx/flying.png?rlkey=i0lsx2b8zx1vkeljfeqqoytvd&raw=1' },
-    { type: 'psychic', color: '#F95587', background: 'https://www.dropbox.com/scl/fi/x9ykg6vuluuupi1l12200/psychic.png?rlkey=4odehcpb1bk3akk0j715ho51y&raw=1' },
-    { type: 'bug', color: '#B6A136', background: 'https://www.dropbox.com/scl/fi/35yp5kqzhvp3ssp8olcnd/grass-bug.png?rlkey=7g1bcxwcyu5gwt7ktu5n1cz5b&raw=1' },
-    { type: 'rock', color: '#B6A136', background: 'https://www.dropbox.com/scl/fi/h2ue1e5a4d775g01qez8e/rock.png?rlkey=f2mg43ntdz5rf46wxms4zltvy&raw=1' },
-    { type: 'ghost', color: '#735797', background: 'https://www.dropbox.com/scl/fi/ubdo9smqse7m4atg1ba6j/ghost.png?rlkey=3j5yw424bikdp40xeatm8a314&raw=1' },
-    { type: 'dragon', color: '#6F35FC', background: 'https://www.dropbox.com/scl/fi/9dbj7zu24vbhylfxpswlz/dragon.png?rlkey=0cdiqqsgrpjiiafx1jb7upy2d&raw=1' },
-    { type: 'dark', color: '#705746', background: 'https://www.dropbox.com/scl/fi/boottrhzki0wo9x2kw63v/dark.png?rlkey=47zenfjp49cpdv9dw31qxs9ad&raw=1' },
-    { type: 'steel', color: '#B7B7CE', background: 'https://www.dropbox.com/scl/fi/0agxifybjc1xicdhp2eri/steel.png?rlkey=ccb1ubmd176aat5n6ojnrurxo&raw=1' },
-    { type: 'fairy', color: '#D685AD', background: 'https://www.dropbox.com/scl/fi/5or1wrcyu9umc8zkizye9/fairy.png?rlkey=hpb93ok19ksq3qb22rqwymref&raw=1' }
+    { type: 'normal', color: '#A8A77A', background: './backgrounds/normal.png' },
+    { type: 'fire', color: '#EE8130', background: './backgrounds/fire.png' },
+    { type: 'water', color: '#6390F0', background: './backgrounds/water.png' },
+    { type: 'electric', color: '#F7D02C', background: './backgrounds/electric.png' },
+    { type: 'grass', color: '#7AC74C', background: './backgrounds/grass&bug.png' },
+    { type: 'ice', color: '#96D9D6', background: './backgrounds/ice.png' },
+    { type: 'fighting', color: '#C22E28', background: './backgrounds/fighting.png' },
+    { type: 'poison', color: '#A33EA1', background: './backgrounds/poison.png' },
+    { type: 'ground', color: '#E2BF65', background: './backgrounds/ground.png' },
+    { type: 'flying', color: '#A98FF3', background: './backgrounds/flying.png' },
+    { type: 'psychic', color: '#F95587', background: './backgrounds/psychic.png' },
+    { type: 'bug', color: '#B6A136', background: './backgrounds/grass&bug.png' },
+    { type: 'rock', color: '#B6A136', background: './backgrounds/rock.png' },
+    { type: 'ghost', color: '#735797', background: './backgrounds/ghost.png' },
+    { type: 'dragon', color: '#6F35FC', background: './backgrounds/dragon.png' },
+    { type: 'dark', color: '#705746', background: './backgrounds/dark.png' },
+    { type: 'steel', color: '#B7B7CE', background: './backgrounds/steel.png' },
+    { type: 'fairy', color: '#D685AD', background: './backgrounds/fairy.png' }
 ];
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -155,7 +155,7 @@ function typeSelector() {
         })
         .join('');
 
-    if (matchingType.type === 'ghost' || matchingType.type === 'psychic' || matchingType.type === 'dark') {
+    if (matchingType.type === 'ghost' || matchingType.type === 'psychic' || matchingType.type === 'dark' || matchingType.type === 'steel') {
         d3.select('#image-container').style('color', 'white')
     } else {
         d3.select('#image-container').style('color', 'black')
@@ -217,6 +217,5 @@ function displayError(errorText) {
         d3.select("#error")
             .text(errorText)
     }
-    alert(errorText) //Remove this after submission. Alert boxes are gross
     document.getElementById("search-input").value = ''
 }
