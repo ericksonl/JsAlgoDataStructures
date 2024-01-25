@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div id="search-wrapper">
+            <div id="searcher">
+                <h1>Pokemon Search App</h1>
+                <hr />
+                <h3>Search for Pokémon Name or ID:</h3>
+                <p><small><i>For male/female variations add 'f' or 'm' after the name</i></small></p>
+                <input id="search-input" maxlength="11" placeholder="nidoran f" required></input>
+                <button id="search-button" onclick="search()">Search</button>
+            </div>
+        </div>
+        <div id="results">
+            <div id="image-container">
+                <div id="pokemon">
+                    <span class="pokemon-name">
+                        <h4>Name: </h4>
+                    </span>
+                    <span class="pokemon-id">
+                        <h4>ID: </h4>
+                    </span>
+                </div>
+                <div id="image">
+                    <img id='sprite'>
+                </div>
+                <div id="type-container">
+                    <div id="types"></div>
+                </div>
+            </div>
+            <div id="stats">
+                <div id="other-stats">
+                    <h3>Stats</h3>
+                    <hr />
+                    <div id="measurable-stats">
+                        <div class="column">
+                            <ul id="hp-bars">
+                                <!-- Bars for stats -->
+                                <br />
+                                <p>HP</p>
+                                <p id="hp"></p>
+                            </ul>
+                            <ul id="attack-bars">
+                                <!-- Bars for stats -->
+                                <br />
+                                <p>Attack</p>
+                                <p id="attack"></p>
+                            </ul>
+                            <ul id="defense-bars">
+                                <!-- Bars for stats -->
+                                <br />
+                                <p>Defense</p>
+                                <p id="defense"></p>
+                            </ul>
+                            <ul id="special-attack-bars">
+                                <!-- Bars for stats -->
+                                <p>Sp.<br />Attack</p>
+                                <p id="special-attack"></p>
+                            </ul>
+                            <ul id="special-defense-bars">
+                                <!-- Bars for stats -->
+                                <p>Sp.<br />Defense</p>
+                                <p id="special-defense"></p>
+                            </ul>
+                            <ul id="speed-bars">
+                                <!-- Bars for stats -->
+                                <br />
+                                <p>Speed</p>
+                                <p id="speed"></p>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                    <table>
+                        <tr>
+                            <th>Height</th>
+                            <th>Weight</th>
+                            <!-- <th>Gender</th> -->
+                        </tr>
+                        <tr>
+                            <td id="height"></td>
+                            <td id="weight"></td>
+                            <!-- <td id="gender"></td> -->
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>

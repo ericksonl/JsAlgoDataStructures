@@ -1,0 +1,168 @@
+html {
+    height: 100%;
+    background: radial-gradient(circle at 12.3% 19.3%, rgb(85, 88, 218) 0%, rgb(95, 209, 249) 100.2%);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
+
+body {
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+#search-wrapper {
+    width: 75%;
+    margin-left: 13%;
+    margin-top: 30px;
+}
+
+#searcher {
+    width: 50%;
+    margin-left: 25%;
+    background: linear-gradient(109.8deg, rgb(62, 5, 116) -5.2%, rgb(41, 14, 151) -5.2%, rgb(216, 68, 148) 103.3%);
+    ;
+    border-radius: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: white
+}
+
+#searcher>h1 {
+    margin: 0;
+}
+
+#search-button {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 9px 22px;
+    font-size: 15px;
+    height: 35px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    line-height: normal;
+    background: linear-gradient(90deg, #5522fa 0, #0074e4 100%);
+    border-radius: 20px;
+    transition: color .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+
+#check-btn:hover {
+    box-shadow: 0 0 0 0.15rem #5ceace;
+}
+
+#error {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+
+#results {
+    padding-top: 20px;
+    padding-bottom: 50px;
+    display: flex;
+}
+
+#image-container {
+    width: 35%;
+    margin-left: 15%;
+    border-radius: 20px;
+    margin-right: 20px;
+    background-position: center;
+}
+
+
+#pokemon {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.pokemon-name>h4,
+.pokemon-id>h4 {
+    font-weight: 800;
+    padding-top: 10px;
+}
+
+.pokemon-name>h3,
+.pokemon-id>h3 {
+    margin-top: -10px;
+}
+
+#image>img {
+    width: 60%;
+}
+
+#type-container {
+    display: flex;
+}
+
+#types {
+    padding-left: 20px;
+    padding-top: 20px;
+}
+
+#types>a {
+    text-decoration: none;
+}
+
+.type {
+    color: black;
+    font-size: 1.2rem;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px #000;
+}
+
+#stats {
+    border-radius: 20px;
+    color: #f5f6f7;
+    margin-left: 20px;
+    background: linear-gradient(109.8deg, rgb(62, 5, 116) -5.2%, rgb(41, 14, 151) -5.2%, rgb(216, 68, 148) 103.3%);
+}
+
+#other-stats>h3 {
+    padding-top: 20px;
+}
+
+table {
+    width: 100%;
+    font-size: 1.3rem;
+}
+
+td,
+th {
+    text-align: center;
+    padding: 8px;
+}
+
+.column {
+    display: flex;
+    width: 100%;
+    margin-left: -3%;
+}
+
+.blank-bar {
+    height: 10px;
+    width: 70px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    background-color: white;
+    border: none;
+}
+
+.filled-bar {
+    height: 10px;
+    width: 70px;
+    margin-top: 4px;
+    margin-bottom: 0;
+    border: none;
+    background-color: #30A7D7;
+}
