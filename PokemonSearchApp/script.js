@@ -3,24 +3,24 @@ var content = 'invisible'
 var matchingType
 const type_url = 'https://pokemon.fandom.com/wiki/'
 const colorTypes = [
-    { type: 'normal', color: '#A8A77A', background: './PokemonBackgrounds/normal.png' },
-    { type: 'fire', color: '#EE8130', background: './PokemonBackgrounds/fire.png' },
-    { type: 'water', color: '#6390F0', background: './PokemonBackgrounds/water.png' },
-    { type: 'electric', color: '#F7D02C', background: './PokemonBackgrounds/electric.png' },
-    { type: 'grass', color: '#7AC74C', background: './PokemonBackgrounds/grass&bug.png' },
-    { type: 'ice', color: '#96D9D6', background: './PokemonBackgrounds/ice.png' },
-    { type: 'fighting', color: '#C22E28', background: './PokemonBackgrounds/fighting.png' },
-    { type: 'poison', color: '#A33EA1', background: './PokemonBackgrounds/poison.png' },
-    { type: 'ground', color: '#E2BF65', background: './PokemonBackgrounds/ground.png' },
-    { type: 'flying', color: '#A98FF3', background: './PokemonBackgrounds/flying.png' },
-    { type: 'psychic', color: '#F95587', background: './PokemonBackgrounds/psychic.png' },
-    { type: 'bug', color: '#B6A136', background: './PokemonBackgrounds/grass&bug.png' },
-    { type: 'rock', color: '#B6A136', background: './PokemonBackgrounds/rock.png' },
-    { type: 'ghost', color: '#735797', background: './PokemonBackgrounds/ghost.png' },
-    { type: 'dragon', color: '#6F35FC', background: './PokemonBackgrounds/dragon.png' },
-    { type: 'dark', color: '#705746', background: './PokemonBackgrounds/dark.png' },
-    { type: 'steel', color: '#B7B7CE', background: './PokemonBackgrounds/steel.png' },
-    { type: 'fairy', color: '#D685AD', background: './PokemonBackgrounds/fairy.png' }
+    { type: 'normal', color: '#A8A77A', background: './backgrounds/normal.png' },
+    { type: 'fire', color: '#EE8130', background: './backgrounds/fire.png' },
+    { type: 'water', color: '#6390F0', background: './backgrounds/water.png' },
+    { type: 'electric', color: '#F7D02C', background: './backgrounds/electric.png' },
+    { type: 'grass', color: '#7AC74C', background: './backgrounds/grass&bug.png' },
+    { type: 'ice', color: '#96D9D6', background: './backgrounds/ice.png' },
+    { type: 'fighting', color: '#C22E28', background: './backgrounds/fighting.png' },
+    { type: 'poison', color: '#A33EA1', background: './backgrounds/poison.png' },
+    { type: 'ground', color: '#E2BF65', background: './backgrounds/ground.png' },
+    { type: 'flying', color: '#A98FF3', background: './backgrounds/flying.png' },
+    { type: 'psychic', color: '#F95587', background: './backgrounds/psychic.png' },
+    { type: 'bug', color: '#B6A136', background: './backgrounds/grass&bug.png' },
+    { type: 'rock', color: '#B6A136', background: './backgrounds/rock.png' },
+    { type: 'ghost', color: '#735797', background: './backgrounds/ghost.png' },
+    { type: 'dragon', color: '#6F35FC', background: './backgrounds/dragon.png' },
+    { type: 'dark', color: '#705746', background: './backgrounds/dark.png' },
+    { type: 'steel', color: '#B7B7CE', background: './backgrounds/steel.png' },
+    { type: 'fairy', color: '#D685AD', background: './backgrounds/fairy.png' }
 ];
 
 document.addEventListener('DOMContentLoaded', function () {
