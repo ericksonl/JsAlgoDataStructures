@@ -7,15 +7,8 @@ body {
     background-color: #e9bcda;
 }
 
-main {
-    height: 100%;
-    width: 100%;
-    display: table;
-}
-
 .wrapper {
-    transform: translate(35vw, 20vw);
-    width: 25%;
+    margin: 15% 35% 0 35%;
     padding: 20px 20px 40px 20px;
     background-color: #C0F8D1;
     border-radius: 30px;
