@@ -1,0 +1,48 @@
+html,
+body {
+    text-align: center;
+    height: 100%;
+    background-color: #61988E;
+}
+
+main {
+    height: 100%;
+    width: 100%;
+    display: table;
+}
+
+.wrapper {
+    transform: translate(35vw, 20vw);
+    width: 25%;
+    padding: 20px 20px 40px 20px;
+    background-color: beige;
+    border-radius: 30px;
+    box-shadow: 5px 5px 30px 3px black;
+}
+
+#result {
+    font-size: 1.2rem;
+    padding-top: 20px;
+}
+
+#check-btn {
+    display: inline-block;
+    outline: 0;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+    padding: 9px 22px;
+    font-size: 15px;
+    height: 35px;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    line-height: normal;
+    background: linear-gradient(90deg, #5522fa 0, #0074e4 100%);
+    border-radius: 50px;
+    transition: color .2s ease, background-color .2s ease, box-shadow .2s ease;
+}
+
+#check-btn:hover {
+    box-shadow: 0 0 0 0.15rem #5ceace;
+}
