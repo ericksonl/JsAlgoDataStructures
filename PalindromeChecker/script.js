@@ -3,7 +3,7 @@ function checker() {
     let basicStr = removePunctuation(value.toLowerCase())
 
     if (value === "") {
-        alert("Please input a value")
+        document.getElementById("result").innerHTML = "Please input a value"
     } else {
         let reverse = basicStr.split("").reverse().join('')
         console.log(basicStr, "\n", reverse)

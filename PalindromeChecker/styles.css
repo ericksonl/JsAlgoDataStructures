@@ -1,8 +1,10 @@
-html,
+html {
+    height: 100%;
+}
+
 body {
     text-align: center;
-    height: 100%;
-    background-color: #61988E;
+    background-color: #e9bcda;
 }
 
 main {
@@ -15,9 +17,9 @@ main {
     transform: translate(35vw, 20vw);
     width: 25%;
     padding: 20px 20px 40px 20px;
-    background-color: beige;
+    background-color: #C0F8D1;
     border-radius: 30px;
-    box-shadow: 5px 5px 30px 3px black;
+    box-shadow: 5px 5px 30px 3px rgba(0, 0, 0, 0.5);
 }
 
 #result {
@@ -38,7 +40,7 @@ main {
     color: #fff;
     text-align: center;
     line-height: normal;
-    background: linear-gradient(90deg, #5522fa 0, #0074e4 100%);
+    background: linear-gradient(90deg, #B287A3 0, #D051A6 100%);
     border-radius: 50px;
     transition: color .2s ease, background-color .2s ease, box-shadow .2s ease;
 }
