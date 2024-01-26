@@ -4,21 +4,31 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Rubik+Doodle+Shadow&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./styles.css">
+    <script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
     <title>RomanNumeralConverter</title>
 </head>
 
 <body>
     <div class="wrapper">
-        <h1>Roman Numeral Converter</h1>
-        <hr />
-        <div class="wrapper">
-            <h2>Roman Numeral</h2>
-            <input id="number" maxlength="4"></input>
+        <h1>Roman<br/> Numeral Converter</h1>
+        <div class="input_wrapper">
+            <h2>Enter a number</h2>
+            <input id="number" type="number">
+            <br />
+            <br />
             <button id="convert-btn" onclick="checker()">Check</button>
-            <h2>Number</h2>
-            <div id="output"></div>
         </div>
+        <br />
+        <div id="output"></div>
+    </div>
     </div>
     <script src="./script.js"></script>
 </body>
