@@ -1,5 +1,4 @@
-var input
-const outputBox = document.getElementById("output")
+const outputBox = d3.select('#output')
 const roman = {
     M: 1000,
     CM: 900,
@@ -15,28 +14,47 @@ const roman = {
     I: 1
 }
 
+var input
+var outStr
+
 function checker() {
+    //set outStr to a blank string
+    outStr = ''
+
     input = document.getElementById('number').value
+
+    //convert input to an int    
     let input_num = Number(input)
+    outputBox.style('display', 'block')
 
-    let output = d3.select('#output')
-
-    console.log(input_num)
+    //if the input is blank or 0 (not an int), error
     if (input_num === '' || input_num === 0) {
-        output.text('Please enter a valid number')
+        outputBox.text('Please enter a valid number')
     } else if (input_num < 0) {
-        output.text('Please enter a number greater than or equal to 1')
+        outputBox.text('Please enter a number greater than or equal to 1')
     } else if (input_num >= 4000) {
-        output.text('Please enter a number less than or equal to 3999')
+        outputBox.text('Please enter a number less than or equal to 3999')
     } else {
-        output.text('')
-        converter()
+        //reset output box
+        outputBox.text('')
+        //call converter function
+        outputBox.text(converter(input))
     }
 }
 
-function converter() {
-    // console.log("Before: ", value)
-    // value = Number(value)
-    // console.log("After: ", value)
-    // for (let i = 0; i < value.length; i++)
+function converter(num) {
+    //loop over each key in roman object
+    for (let i of Object.keys(roman)) {
+        //if num is 0, stop the loop
+        if (num == 0) {
+            return outStr
+        } else if (Math.floor(num / roman[i]) >= 1) { //else if the num / roman key value is >= 1 (for division by 1)
+            //subtract value from num
+            num -= roman[i]
+            //add key value to outstr
+            outStr += i
+            //callback 
+            return converter(num)
+        }
+    }
 }
