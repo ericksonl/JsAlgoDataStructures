@@ -1,0 +1,63 @@
+html {
+    height: 100%;
+    background-color: #4472CA;
+
+}
+
+#wrapper {
+    text-align: center;
+    margin-left: 40%;
+    margin-right: 40%;
+    background-color: black;
+    border-radius: 30px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+}
+
+#content {
+    height: 450px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 20px;
+    background-color: grey;
+}
+
+#content>h2 {
+    padding-top: 15px;
+}
+
+#user-input {
+    border-radius: 10px;
+    height: 40px;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+#results-div {
+    height: 320px;
+    overflow-y: auto;
+}
+
+#buttons {
+    padding-top: 10px;
+}
+
+#buttons>button {
+    appearance: none;
+    background-color: #ffffff;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.2) 0 -4px 4px inset;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 6px 16px;
+}
+
+#check-btn:active,
+#clear-btn:active {
+    transform: translate(0, 1px);
+    background-color: #F3F4F6;
+    text-decoration: none;
+}
