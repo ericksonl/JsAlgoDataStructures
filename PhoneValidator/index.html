@@ -10,8 +10,8 @@
 </head>
 
 <body>
-    <h1>Telephone Number<br />Validator</h1>
-    <div id="wrapper">
+    <h1 id="title">Telephone Number Validator</h1>
+    <div id="wrapper" class="wrapper">
         <div id="content">
             <h2>Enter a phone number:</h2>
             <input id="user-input">
@@ -19,10 +19,11 @@
             </div>
         </div>
         <div id="buttons">
-            <button id="check-btn">Check</button>
-            <button id="clear-btn">Clear</button>
+            <button id="check-btn" onclick="checkInput()">Check</button>
+            <button id="clear-btn" onclick="clearInput()">Clear</button>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 
 </html>

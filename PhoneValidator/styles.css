@@ -4,11 +4,21 @@ html {
 
 }
 
-#wrapper {
+#title {
+    color: white;
     text-align: center;
-    margin-left: 40%;
-    margin-right: 40%;
+    width: 350px;
+    margin: auto;
+    margin-top: 3%;
+    padding-bottom: 40px;
+}
+
+#wrapper {
+    width: 350px;
+    margin: auto;
+    text-align: center;
     background-color: black;
+    box-shadow: 0 0px 40px 10px #5E7CE2;
     border-radius: 30px;
     padding-top: 15px;
     padding-bottom: 30px;
@@ -19,6 +29,8 @@ html {
     margin-left: 20px;
     margin-right: 20px;
     border-radius: 20px;
+    box-shadow: 0 -70px 40px -40px rgba(0, 0, 0, 0.5) inset,
+        0 70px 40px -40px rgba(0, 0, 0, 0.2) inset;
     background-color: grey;
 }
 
@@ -34,8 +46,14 @@ html {
 }
 
 #results-div {
-    height: 320px;
+    padding-top: 20px;
+    height: 323px;
+    border-radius: 20px;
     overflow-y: auto;
+}
+
+#results-div::-webkit-scrollbar {
+    display: none;
 }
 
 #buttons {
