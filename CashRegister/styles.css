@@ -49,9 +49,15 @@ body {
     margin-bottom: -5px;
 }
 
-#change-due>h3, #change-due>p {
-    line-height: 10px;
-    font-weight: 300;
+#change-due>h3 {
+    line-height: 5px;
+    font-weight: 400;
+    margin: 0;
+}
+
+#change-due>p {
+    line-height: 25px;
+    font-weight: 200;
     margin: 0;
 }
 
@@ -235,9 +241,8 @@ body {
     width: 250px;
     height: 250px;
     padding: 1px 0 1px 20px;
+    transform: translate(600px, -550px) skew(25deg);
     zoom: 0.4;
-    transform: translate(600px, -550px) rotate(0deg) skew(25deg);
-    z-index: 1;
 }
 
 .tape {
@@ -245,5 +250,5 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     width: 20px;
     height: 35px;
-    transform: translate(300px, -270px) rotate(0deg) skew(25deg);
+    transform: translate(300px, -270px) skew(25deg);
 }
