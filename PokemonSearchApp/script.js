@@ -97,9 +97,9 @@ function buildPage() {
     calcStats(data.stats)
 
     d3.select('#height')
-        .text(data.height)
+        .text(formatHeight(data.height))
     d3.select('#weight')
-        .text(data.weight)
+        .text(formatWeight(data.weight))
 
 }
 
@@ -130,11 +130,10 @@ function updatePage() {
         .text(data.stats[4].base_stat)
     d3.select('#speed')
         .text(data.stats[5].base_stat)
-
     d3.select('#height')
-        .text(data.height)
+        .text(formatHeight(data.height))
     d3.select('#weight')
-        .text(data.weight)
+        .text(formatWeight(data.weight))
 
     d3.select("#hp-bars").selectAll("hr").remove()
     d3.select("#attack-bars").selectAll("hr").remove()
@@ -193,10 +192,10 @@ function formatHeight(number) {
 }
 
 function formatWeight(number) {
-    const imperialNum = ((number / 3.084) * 10) / 10
-    const feet = Math.floor(imperialNum);
-    const inches = Math.round((imperialNum - feet) * 12);
-    return `${feet}' ${inches}"`;
+    const imperialNum = ((number / 4.545) * 10) / 10
+    const pounds = Math.floor(imperialNum);
+    const ounces = Math.round((imperialNum - pounds) * 16);
+    return `${pounds}.${ounces} lbs`;
 }
 
 function removePunctuation(text) {
