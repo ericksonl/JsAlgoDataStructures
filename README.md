@@ -1,5 +1,5 @@
 # JavaScript Algorithms and Data Structures
-A collection of projects designed to be a guide for the fundamental concepts of JavaScript.
+A collection of projects designed to be a guide for the fundamental concepts of JavaScript algorithms and Data Structures.
 
 ## Summary of Projects:
 
