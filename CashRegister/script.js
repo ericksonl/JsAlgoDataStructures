@@ -50,7 +50,6 @@ const purchase = () => {
     } else if (cash - price > total_cid) {
         reg_status = 'INSUFFICIENT_FUNDS'
     } else {
-        console.log(cash - price, total_cid)
         if (cash - price == total_cid) {
             reg_status = 'CLOSED'
         } else {
@@ -83,7 +82,7 @@ const calculateChange = (num) => {
 
         //to accomodate for the final test, adding html elements > value but = 0. 
         if (num >= element.value && cid[index][1] == 0) {
-            missed_change += `<p>${element.name}: $0</p><br />`
+            missed_change += `<p>${element.name}: $0</p> `
         } else {
             //while num is greater than the elements value
             while (num >= element.value && cid[index][1] > 0) {
@@ -114,7 +113,7 @@ const changeUpdate = () => {
         let filtered_items = change_tracker.filter((element) => element.outStr !== 0)
         change_due.innerHTML += missed_change
         filtered_items.forEach(element => {
-            change_due.innerHTML += `<p>${element.name}: $${floatFixer(element.outStr)}</p><br />`
+            change_due.innerHTML += `<p>${element.name}: $${floatFixer(element.outStr)}</p>`
         })
     }
 }
